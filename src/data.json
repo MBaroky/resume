@@ -1,12 +1,57 @@
 [
     {
-        "id": 1,
-        "name": "blabla",
-        "range": 5
+        "name": "menu-items",
+        "data": [
+            {
+                "name": "About",
+                "icon": "icon-user",
+                "label": "About Me"
+            },
+            {
+                "name": "Experience",
+                "icon": "icon-folder-alt",
+                "label": "Experience"
+            },
+            {
+                "name": "Education",
+                "icon": "icon-graduation",
+                "label": "Education"
+            },
+            {
+                "name": "Skills",
+                "icon": "icon-wrench",
+                "label": "Skills"
+            },
+            {
+                "name": "Samples",
+                "icon": "icon-picture",
+                "label": "Samples"
+            }
+        ]
     },
     {
-        "id": 2,
-        "name": "tlotloto",
-        "range": 15
+        "name": "profile",
+        "data": {
+            "name": "Mohamed El-Baroky",
+            "title": "Front-end Developer",
+            "image": "./assets/img/profile-picture.png",
+            "social-icons": [
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/in/mbaroky/",
+                    "icon-class": "fa fa-linkedin-square"
+                },
+                {
+                    "name": "github",
+                    "link": "https://github.com/MBaroky",
+                    "icon-class": "fa fa-github-alt"
+                },
+                {
+                    "name": "whatsapp",
+                    "link": "https://wa.me/201069795428",
+                    "icon-class": "fa fa-whatsapp"
+                }
+            ]
+        }
     }
 ]

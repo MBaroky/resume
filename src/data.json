@@ -50,8 +50,229 @@
                     "name": "whatsapp",
                     "link": "https://wa.me/201069795428",
                     "icon-class": "fa fa-whatsapp"
+                },
+                {
+                    "name": "email",
+                    "link": "mailto:m.baroky@gmail.com",
+                    "icon-class": "fa fa-envelope"
                 }
             ]
         }
+    },
+    {
+        "name": "skills",
+        "data": [
+            {
+                "id": 1,
+                "label": "English",
+                "score": "79",
+                "rank": "(C2 Proficient)"
+            },
+            {
+                "id": 2,
+                "label": "HTML5",
+                "score": "85",
+                "rank": "Expert"
+            },
+            {
+                "id": 3,
+                "label": "CSS3",
+                "score": "90",
+                "rank": "Expert"
+            },
+            {
+                "id": 4,
+                "label": "Javascript",
+                "score": "65",
+                "rank": "Professional"
+            },
+            {
+                "id": 5,
+                "label": "ReactJs",
+                "score": "43",
+                "rank": "Intermediate"
+            },
+            {
+                "id": 6,
+                "label": "C Language",
+                "score": "20",
+                "rank": "Beginner"
+            },
+            {
+                "id": 7,
+                "label": "Python",
+                "score": "15",
+                "rank": "Beginner"
+            },
+            {
+                "id": 8,
+                "label": "SQLite3",
+                "score": "30",
+                "rank": "Beginner"
+            },
+            {
+                "id": 9,
+                "label": "Redux",
+                "score": "46",
+                "rank": "Intermediate"
+            },
+            {
+                "id": 10,
+                "label": "Express",
+                "score": "25",
+                "rank": "Beginner"
+            },
+            {
+                "id": 11,
+                "label": "NodeJs",
+                "score": "25",
+                "rank": "Beginner"
+            },
+            {
+                "id": 12,
+                "label": "WebPack",
+                "score": "10",
+                "rank": "Beginner"
+            },
+            {
+                "id": 13,
+                "label": "Saas",
+                "score": "39",
+                "rank": "Intermediate"
+            },
+            {
+                "id": 14,
+                "label": "Microsoft Office",
+                "score": "67",
+                "rank": "Professional"
+            },
+            {
+                "id": 15,
+                "label": "Adobe Photoshop",
+                "score": "87",
+                "rank": "Expert"
+            },
+            {
+                "id": 16,
+                "label": "Adobe Illustrator",
+                "score": "75",
+                "rank": "Professional"
+            }
+        ]
+    },
+    {
+        "name": "history",
+        "data": [
+            {
+                "id": 1,
+                "type": "education",
+                "start": "2005",
+                "end": "2009",
+                "place": "Cairo University",
+                "title": "Bachelor of Science (BS), Accounting"
+            },
+            {
+                "id": 2,
+                "type": "education",
+                "end": "Jul 2009",
+                "place": "ITI - Information Technology Institute",
+                "title": "English Course",
+                "skills": [
+                    1
+                ]
+            },
+            {
+                "id": 3,
+                "type": "work",
+                "start": "May 2010",
+                "end": "October 2013",
+                "place": "Egyptian Company For International Trade - Belco",
+                "title": "Accountant",
+                "skills": [
+                    14
+                ]
+            },
+            {
+                "id": 4,
+                "type": "work",
+                "start": "November 2013",
+                "end": "November 2014",
+                "place": "MehwartvChannel",
+                "title": "Web Designer, 2-D Graphic Designer",
+                "skills": [
+                    15,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "id": 5,
+                "type": "work",
+                "start": "November 2014",
+                "end": "February 2015",
+                "place": "PSO Digital",
+                "title": "Web Designer",
+                "skills": [
+                    15,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "id": 6,
+                "type": "work",
+                "start": "January 2016",
+                "end": "Present",
+                "place": "Yellow Media- an Egypt Yellow Pages Company",
+                "title": "Web Designer/ Front-end Developer",
+                "skills": [
+                    15,
+                    16,
+                    2,
+                    3,
+                    4,
+                    13
+                ]
+            },
+            {
+                "id": 7,
+                "type": "education",
+                "end": "Feb 2021",
+                "place": "Udacity - FWD initiative",
+                "title": "Web development - professional track",
+                "skills": [
+                    4,
+                    11,
+                    10
+                ]
+            },
+            {
+                "id": 8,
+                "type": "education",
+                "end": "Jun 2021",
+                "place": "Udacity - FWD initiative",
+                "title": "Front End development - Advanced track",
+                "skills": [
+                    13,
+                    12,
+                    5,
+                    9
+                ]
+            },
+            {
+                "id": 9,
+                "type": "education",
+                "end": "Feb 2023",
+                "place": "Cambridge CS50x Course",
+                "title": "Introduction to Computer Science",
+                "skills": [
+                    6,
+                    7,
+                    8
+                ]
+            }
+        ]
     }
 ]

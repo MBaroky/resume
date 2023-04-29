@@ -2,9 +2,9 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import data from './data.json';
 
-import Header from './Header';
+import Header from './components/Header';
 import BodyWrapper
- from './BodyWrapper';
+ from './components/BodyWrapper';
 
 function App() {
   // Using state to store the data from the JSON file

@@ -35,7 +35,7 @@ function Timeline({items, skills, id, type}) {
                                             {
                                                 item.skills?
                                                 item.skills.map(skill=>(
-                                                    <li key='skill' className="list-inline-item">
+                                                    <li key={skill} className="list-inline-item">
                                                         <div>
                                                             <h5><span className="badge bg-secondary text-dark">{skills.data.find(({id})=> id === skill).label}</span></h5>
                                                         </div>

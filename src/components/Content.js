@@ -2,6 +2,7 @@ import React from 'react';
 import About from './sections/About';
 import Education from './sections/Education';
 import Experience from './sections/Experience';
+import Skills from './sections/Skills';
 
 
 function Content({content}) {
@@ -16,33 +17,7 @@ function Content({content}) {
 
             <Education items={history} skills={skillsList}  />
 
-            <section id="skills" className="p-lg-4">
-                <div className="card bg-transparent p-4 border-0">
-                    <div className="card-header bg-dark py-3 px-0">
-                        <h6 className="fw-bold m-0"><strong>SKILLS</strong></h6>
-                    </div>
-                    <div className="card-body px-0">
-                        <div className="row row-cols-1 row-cols-sm-2">
-                            <div className="col">
-                                <div>
-                                    <h4 className="small fw-bold">HTML<span className="float-end">20%</span></h4>
-                                    <div className="progress border rounded-pill progress-md mb-3">
-                                        <div className="progress-bar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style={{width: "20%"}}><span className="visually-hidden">20%</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div>
-                                    <h4 className="small fw-bold">CSS<span className="float-end">20%</span></h4>
-                                    <div className="progress border rounded-pill progress-md mb-3">
-                                        <div className="progress-bar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style={{width: "20%"}}><span className="visually-hidden">20%</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Skills items={skillsList} />
             <section id="samples" className="p-lg-4">
                 <div className="card bg-transparent p-4 border-0">
                     <div className="card-header bg-dark py-3 px-0">

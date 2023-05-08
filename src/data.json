@@ -277,23 +277,50 @@
     },
     {
         "name": "portfolio",
-        "types":["screenshot","video","live"],
+        "types": [
+            {
+                "id": 1,
+                "name": "screenshot"
+            },
+            {
+                "id": 2,
+                "name": "video"
+            },
+            {
+                "id": 3,
+                "name": "live"
+            }
+        ],
         "data": [
             {
                 "id": 1,
-                "type": "screenshot",
+                "type": 1,
                 "thumb": "https://unsplash.it/600.jpg?image=251",
                 "link": "https://unsplash.it/1200/768.jpg?image=251"
-            },{
+            },
+            {
                 "id": 2,
-                "type": "screenshot",
+                "type": 1,
                 "thumb": "https://unsplash.it/600.jpg?image=252",
                 "link": "https://unsplash.it/1200/768.jpg?image=252"
-            },{
+            },
+            {
                 "id": 3,
-                "type": "screenshot",
+                "type": 1,
                 "thumb": "https://unsplash.it/600.jpg?image=253",
                 "link": "https://unsplash.it/1200/768.jpg?image=253"
+            },
+            {
+                "id": 3,
+                "type": 2,
+                "thumb": "https://unsplash.it/600.jpg?image=253",
+                "link": "https://unsplash.it/1200/768.jpg?image=253"
+            },
+            {
+                "id": 2,
+                "type": 2,
+                "thumb": "https://unsplash.it/600.jpg?image=252",
+                "link": "https://unsplash.it/1200/768.jpg?image=252"
             }
         ]
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionWrapper from './SectionWrapper';
 
 function Timeline({items, skills, id, type}) {
     const sortList = (list)=>{
@@ -12,14 +13,9 @@ function Timeline({items, skills, id, type}) {
         return newList
     }
     return (
-        <section id={id} className="p-lg-4">
-                <div className="card bg-transparent p-4 border-0">
-                    <div className="card-header bg-dark py-3 px-0">
-                        <h6 className="fw-bold m-0"><strong>{id}</strong></h6>
-                    </div>
-                    <div className="card-body px-0">
+        <SectionWrapper title={id}>
 
-                        <ul className="list-unstyled timeline p-0">
+            <ul className="list-unstyled timeline p-0">
                             {
                                 items
                                 ? sortList(items.data.filter(item=>item.type === type)).map(item=>{
@@ -51,9 +47,7 @@ function Timeline({items, skills, id, type}) {
                             }
 
                         </ul>
-                    </div>
-                </div>
-            </section>
+        </SectionWrapper>
      );
 }
 

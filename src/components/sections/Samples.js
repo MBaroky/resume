@@ -31,7 +31,7 @@ function Samples({ items }) {
                     className={`tab-pane ${index === 0?'active':''}`}
                     role='tabpanel'
                     id={type.name}>
-                      {galleryItems.length > 0 ? <Gallery items={galleryItems} types={items.types} /> : "Tab-Panel " + {index}}
+                      {galleryItems.length > 0 ? <Gallery items={galleryItems} type={type.name} /> : "Tab-Panel " + {index}}
                   </div>
               )})}
             </div>

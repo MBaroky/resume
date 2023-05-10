@@ -295,21 +295,45 @@
             {
                 "id": 1,
                 "type": 2,
-                "thumb": "https://img.youtube.com/vi/UambbFkQhHM/maxresdefault.jpg",
+                "thumb": "https://img.youtube.com/vi/UambbFkQhHM/hqdefault.jpg",
                 "link": "https://www.youtube.com/watch?v=UambbFkQhHM",
                 "desc":"this is a description"
             },{
                 "id": 2,
                 "type": 2,
-                "thumb": "https://img.youtube.com/vi/YvAyW0THAh0/maxresdefault.jpg",
+                "thumb": "https://img.youtube.com/vi/YvAyW0THAh0/hqdefault.jpg",
                 "link": "https://www.youtube.com/watch?v=YvAyW0THAh0",
                 "desc":"this is a description"
             },{
                 "id": 3,
                 "type": 2,
-                "thumb": "https://img.youtube.com/vi/xRhhd14-SCw/maxresdefault.jpg",
+                "thumb": "https://img.youtube.com/vi/xRhhd14-SCw/hqdefault.jpg",
                 "link": "https://www.youtube.com/watch?v=xRhhd14-SCw",
                 "desc":"this is a description"
+            },{
+                "id": 4,
+                "type": 3,
+                "thumb": "./assets/img/230510-1-thumb.png",
+                "link": "https://www.lawyer-mahmoudshaaban.com/",
+                "desc":"Created via Wix"
+            },{
+                "id": 5,
+                "type": 3,
+                "thumb": "./assets/img/230510-2-thumb.png",
+                "link": "https://www.lawyer-mahmoudshaaban.com/",
+                "desc":"Created via Wix"
+            },{
+                "id": 6,
+                "type": 1,
+                "thumb": "./assets/img/230510-1-thumb.png",
+                "link": "./assets/img/230510-1.png",
+                "desc":"Created via Wix"
+            },{
+                "id": 7,
+                "type": 1,
+                "thumb": "./assets/img/230510-2-thumb.png",
+                "link": "./assets/img/230510-2.png",
+                "desc":"Created via Wix"
             }
         ]
     }

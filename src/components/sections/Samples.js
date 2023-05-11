@@ -3,24 +3,28 @@ import SectionWrapper from "../SectionWrapper";
 import Gallery from "../Gallery";
 
 function Samples({ items }) {
+  const getIdFromTypeName = (str) =>{
+    return str.toLowerCase().replace(" ",'-')
+  }
   return (
     items?
     <SectionWrapper title="samples">
 
       <div>
             <ul className='nav nav-pills nav-fill' role='tablist'>
-              {items.types.map((type, index)=>(
+              {items.types.map((type, index)=>{
+                return (
 
               <li key={index} className='nav-item' role='presentation'>
                 <a
                   className={`nav-link ${index === 0?'active':''}`}
                   role='tab'
                   data-bs-toggle='pill'
-                  href={`#${type.name}`}>
+                  href={`#${getIdFromTypeName(type.name)}`}>
                   {type.name}
                 </a>
               </li>
-              ))}
+              )})}
             </ul>
             <div className='tab-content'>
               {items.types.map((type, index)=>{
@@ -30,7 +34,7 @@ function Samples({ items }) {
                     key={index}
                     className={`tab-pane ${index === 0?'active':''}`}
                     role='tabpanel'
-                    id={type.name}>
+                    id={getIdFromTypeName(type.name)}>
                       {galleryItems.length > 0 ? <Gallery items={galleryItems} type={type.name} /> : "Tab-Panel " + {index}}
                   </div>
               )})}

@@ -11,7 +11,7 @@ function Gallery({ items, type }) {
   return (
     <div className='row photos gallery'>
       {items.map(item => {
-        const { id, link, thumb, desc } = item;
+        const { id, link, thumb, desc, linkType } = item;
         const typeName = type;
         return (
           <div key={id} className='col-sm-6 col-md-4 col-lg-3 item'>
@@ -20,7 +20,8 @@ function Gallery({ items, type }) {
               data-gallery={typeName ? typeName : ""}
               onClick={onClick}
               href={link}
-              data-caption={desc}>
+              data-caption={desc}
+              data-type={linkType}>
               <img
                 alt='alt-text'
                 className='img-fluid'

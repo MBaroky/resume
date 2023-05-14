@@ -22,7 +22,7 @@ function TimelineItem({ item, skills, isInView, delay }) {
         <h4 style={{ overflow: "hidden" }}>
           <div
             data-aos='slide-up'
-            data-aos-delay={delay * 4}
+            data-aos-delay={delay}
             className={`aos-init ${inViewPort ? "aos-animate" : ""}`}>
             {item.place}
           </div>
@@ -30,7 +30,7 @@ function TimelineItem({ item, skills, isInView, delay }) {
         <p style={{ overflow: "hidden" }}>
           <div
             data-aos='slide-up'
-            data-aos-delay={delay * 8}
+            data-aos-delay={delay}
             className={`aos-init ${inViewPort ? "aos-animate" : ""}`}>
             {item.title}
           </div>
@@ -45,7 +45,7 @@ function TimelineItem({ item, skills, isInView, delay }) {
                 style={{ overflow: "hidden" }}>
                 <div
                   data-aos='slide-up'
-                  data-aos-delay={delay * index}
+                  data-aos-delay={delay + index * 100}
                   className={`aos-init ${
                     inViewPort ? "aos-animate" : ""
                   }`}>

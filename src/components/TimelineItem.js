@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 function TimelineItem({ item, skills, isInView, delay }) {
   const [inViewPort, setInviewPort] = useState(false);
 
+  // conditional class name for aos animation when inview is triggered
+
   const sharedClassName = `aos-init ${
     inViewPort ? "aos-animate" : ""
   }`;
 
+  // repeated props in sub elements
   const sharedAosProps = {
     "data-aos": "slide-up",
     "data-aos-delay": delay,
@@ -42,7 +45,7 @@ function TimelineItem({ item, skills, isInView, delay }) {
                 key={skill}
                 className='list-inline-item overflow-hidden'>
                 <div
-                  data-aos={sharedAosProps["data-aos"]}
+                  data-aos={sharedAosProps["data-aos"]} // taking only the direction bc delay math is diff
                   data-aos-delay={delay + index * 100}
                   className={sharedClassName}>
                   <h5>

@@ -2,53 +2,49 @@ import { useEffect, useState } from "react";
 
 function TimelineItem({ item, skills, isInView, delay }) {
   const [inViewPort, setInviewPort] = useState(false);
+
+  const sharedClassName = `aos-init ${
+    inViewPort ? "aos-animate" : ""
+  }`;
+
+  const sharedAosProps = {
+    "data-aos": "slide-up",
+    "data-aos-delay": delay,
+    className: sharedClassName,
+  };
+
   useEffect(() => {
     isInView ? setInviewPort(true) : setInviewPort(false);
   }, [isInView]);
+
   return (
     <li
       data-delay={delay}
       className={`${inViewPort ? "active" : ""}`}>
       <div>
-        <h6 style={{ overflow: "hidden" }}>
-          <div
-            data-aos='slide-up'
-            data-aos-delay={delay}
-            className={`aos-init ${inViewPort ? "aos-animate" : ""}`}>
+        <h6 className='overflow-hidden'>
+          <div {...sharedAosProps}>
             {item.start ? item.start + " - " : "Finished: "}
             {item.end ? item.end : "Present"}
           </div>
         </h6>
-        <h4 style={{ overflow: "hidden" }}>
-          <div
-            data-aos='slide-up'
-            data-aos-delay={delay}
-            className={`aos-init ${inViewPort ? "aos-animate" : ""}`}>
-            {item.place}
-          </div>
+        <h4 className='overflow-hidden'>
+          <div {...sharedAosProps}>{item.place}</div>
         </h4>
-        <p style={{ overflow: "hidden" }}>
-          <div
-            data-aos='slide-up'
-            data-aos-delay={delay}
-            className={`aos-init ${inViewPort ? "aos-animate" : ""}`}>
-            {item.title}
-          </div>
-        </p>
+        <div className='overflow-hidden'>
+          <p {...sharedAosProps}>{item.title}</p>
+        </div>
       </div>
       <ul className='list-inline'>
         {item.skills
           ? item.skills.map((skill, index) => (
               <li
                 key={skill}
-                className='list-inline-item'
-                style={{ overflow: "hidden" }}>
+                className='list-inline-item overflow-hidden'>
                 <div
-                  data-aos='slide-up'
+                  data-aos={sharedAosProps["data-aos"]}
                   data-aos-delay={delay + index * 100}
-                  className={`aos-init ${
-                    inViewPort ? "aos-animate" : ""
-                  }`}>
+                  className={sharedClassName}>
                   <h5>
                     <span className='badge bg-secondary text-dark'>
                       {

@@ -1,0 +1,59 @@
+
+/* timeline */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    >li{
+        margin: 0 !important;
+        padding: 0 0 20px 30px;
+        position: relative;
+        &:before {
+            content: ' ';
+            background: var(--bg-color-dark);
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid var(--front-color-main);
+            left: 0;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+            transform: scale(0,0);
+        }
+        &:not(:last-child):after {
+            content: ' ';
+            background: var(--front-color-main);
+            display: inline-block;
+            position: absolute;
+            left: 9px;
+            top: 0;
+            width: 2px;
+            height:0;
+            z-index: 200;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: top;
+        }
+        &.active:not(:last-child):after{
+            transform: scaleY(100%);
+        }
+        &.active:before{
+            transform: scale(100%,100%);
+        }
+    }
+  }
+
+
+// Automating delay cases up to $i items
+$base-margin: 400;
+
+@for $i from 1 through 8 {
+  ul.timeline>li[data-delay="#{$i* $base-margin}"]:before,
+  ul.timeline>li[data-delay="#{($i - 1) * $base-margin}"]:after{
+    transition-delay:#{$i * $base-margin}ms ;
+  }
+}
+  ul.timeline>li:before, ul.timeline>li:after{
+    transition: all 400ms linear;
+  }

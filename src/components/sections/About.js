@@ -1,10 +1,11 @@
-import React, { Fragment, useEffect, SVGProps  } from "react";
+import React, { Fragment } from "react";
 import {useInView} from 'react-cool-inview'
 import Icon from '../Icon'
 import { ReactComponent as ArmyIcon } from "../../icons/army.svg";
 import { ReactComponent as WeddingRing } from "../../icons/married.svg";
 import { ReactComponent as Cake } from "../../icons/cake.svg";
 import { ReactComponent as LocationPin } from "../../icons/location.svg";
+import SectionWrapper from "../SectionWrapper";
 
 function About({content}) {
   const icons =  {
@@ -31,46 +32,39 @@ function About({content}) {
     }`,
   });
   return (
-    <section id='about' className='p-lg-4'>
-      {content
-            ?
-      (<div className='card bg-transparent p-4 border-0'>
-        <div className='card-header bg-dark py-3 px-0'>
-          <h6 className='fw-bold m-0'>
-            <strong>ABOUT</strong>
-          </h6>
-        </div>
-        <div className='card-body px-0' ref={observe}>
-          <ul>
-            {content.bullets.map((bullet, index) =>
-            <li key={index} {...sharedAosProps('up', index * 200 )}>
-              {bullet}
-              <br />
-            </li>)}
-          </ul>
-        </div>
-        <div className='card-header bg-dark py-3 px-0'></div>
-        <div className='card-body px-0'>
-          <div className='row row-cols-4 dl-horizontal'>
-            {content.icons.map((icon, index)=>(
-              <Fragment key={index}>
-                <div className='col-2 text-end overflow-hidden'>
-                  <div {...sharedAosProps('left', index * 200 )}>
+    <SectionWrapper title='about'>
+       {content
+            ?(<div ref={observe}>
 
-                    <Icon component={icons[icon.class]} />
-                  </div>
+                <ul>
+                  {content.bullets.map((bullet, index) =>
+                  <li key={index} {...sharedAosProps('up', index * 200 )}>
+                    {bullet}
+                    <br />
+                  </li>)}
+                </ul>
+                <div className='card-header bg-dark py-3 px-0'></div>
+                <div className="spacer mb-5"></div>
+                <div className='row row-cols-4 dl-horizontal'>
+                  {content.icons.map((icon, index)=>(
+                    <Fragment key={index}>
+                      <div className='col-2 text-end overflow-hidden'>
+                        <div {...sharedAosProps('left', index * 200 )}>
 
+                          <Icon component={icons[icon.class]} />
+                        </div>
+
+                      </div>
+                      <div className='col-4 overflow-hidden'>
+                        <p  {...sharedAosProps('right',  index * 200 )}>{icon.label}</p>
+                      </div>
+                    </Fragment>
+                  ))}
                 </div>
-                <div className='col-4 overflow-hidden'>
-                  <p  {...sharedAosProps('right',  index * 200 )}>{icon.label}</p>
-                </div>
-              </Fragment>
-            ))}
-          </div>
-        </div>
-      </div>)
-      :'Loading'}
-    </section>
+              </div>
+              )
+              :'Loading'}
+    </SectionWrapper>
   );
 }
 

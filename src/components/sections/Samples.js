@@ -2,13 +2,13 @@ import React from "react";
 import SectionWrapper from "../SectionWrapper";
 import Gallery from "../Gallery";
 
-function Samples({ items }) {
+function Samples({ items, state }) {
   const getIdFromTypeName = (str) =>{
     return str.toLowerCase().replace(" ",'-')
   }
   return (
     items?
-    <SectionWrapper title="samples">
+    <SectionWrapper  title="samples">
 
       <div>
             <ul className='nav nav-pills nav-fill' role='tablist'>

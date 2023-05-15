@@ -3,7 +3,7 @@ import SectionWrapper from './SectionWrapper';
 import {useInView} from 'react-cool-inview'
 import TimelineItem from './TimelineItem';
 
-function Timeline({items, skills, id, type}) {
+function Timeline({items, skills, id, type }) {
 
     const { observe, inView } = useInView({
         // Stop observe when the target enters the viewport, so the "inView" only triggered once
@@ -22,7 +22,7 @@ function Timeline({items, skills, id, type}) {
         return newList
     }
     return (
-        <SectionWrapper title={id}>
+        <SectionWrapper  title={id}>
             <ul className="list-unstyled timeline p-0" ref={observe}>
                 {
                     items

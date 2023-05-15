@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./sections/About";
 import Education from "./sections/Education";
@@ -15,7 +15,8 @@ function Content({ content }) {
   const skillsList = getRelativeData("skills");
   const portfolio = getRelativeData("portfolio");
   const about = getRelativeData("about");
-  const pages = getRelativeData("menu-items")
+  // const pages = getRelativeData("menu-items")
+
 
 
 
@@ -25,21 +26,21 @@ function Content({ content }) {
     id='data-wrapper' style={{minHeight:'100vh', boxSizing:'border-box'}}>
       <Routes>
         <Route path='/' exact element={
-          <About content={about} />
+          <About content={about}  />
         } />
         <Route path='/experience' element={
           <Experience items={history} skills={skillsList} />
         } />
         <Route path="/education" element={
-          <Education items={history} skills={skillsList} />
+          <Education items={history} skills={skillsList}  />
         } />
         <Route path='/skills' element={
-          <Skills items={skillsList} />
+          <Skills items={skillsList}  />
         } />
         <Route path="/samples" element={
-          <Samples items={portfolio} />
+          <Samples items={portfolio}  />
         } />
-        <Route path="*" Component={NotFound} />
+        <Route path="*" Component={NotFound}  />
 
 
       </Routes>

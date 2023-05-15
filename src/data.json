@@ -8,22 +8,22 @@
                 "label": "About Me"
             },
             {
-                "name": "Experience",
+                "name": "experience",
                 "icon": "icon-folder-alt",
                 "label": "Experience"
             },
             {
-                "name": "Education",
+                "name": "education",
                 "icon": "icon-graduation",
                 "label": "Education"
             },
             {
-                "name": "Skills",
+                "name": "skills",
                 "icon": "icon-wrench",
                 "label": "Skills"
             },
             {
-                "name": "Samples",
+                "name": "samples",
                 "icon": "icon-picture",
                 "label": "Samples"
             }

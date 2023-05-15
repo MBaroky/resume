@@ -60,6 +60,33 @@
         }
     },
     {
+        "name": "about",
+        "bullets": [
+            "Passionate and innovative, self educated Web Designer/ Front End Developer, with sufficient knowledge in both fields of Designing and Coding.",
+            " 9 years of Experience in the web career, 6 of them as a UI developer using HTML, CSS and  Javascript.",
+            "Studied ReactJS (FWD Advanced track Graduate) and Computer Science introduction (Cambridge University CS50) also worked as Freelancer with Wordpress.",
+            "Ambitious, self critic and a good team player, always ready to take the lead and responsibility for the co-work and willing to elevate my proficiency, by learning new things and sharing knowledge with fellow colleagues."
+        ],
+        "icons": [
+            {
+                "label": "Exempted",
+                "class": "martial-state"
+            },
+            {
+                "label": "Married",
+                "class": "social-state"
+            },
+            {
+                "label": "18 Mar 1988",
+                "class": "birthday"
+            },
+            {
+                "label": "Cairo, Egypt",
+                "class": "address"
+            }
+        ]
+    },
+    {
         "name": "skills",
         "data": [
             {

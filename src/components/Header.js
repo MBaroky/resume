@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 
 function Header({menu}) {
 
@@ -9,11 +10,16 @@ function Header({menu}) {
             <ul className="navbar-nav text-break text-light" id="accordionSidebar">
                 {menu? menu.data.map((item,index) => (
                     <li className="nav-item" key={index}>
-                        <a className="nav-link px-1" href={`#${item.name.toLowerCase()}`}>
-                            <i className={item.icon}></i>
-                            <span className="text-center">{item.label}</span>
-                        </a>
-                    </li>
+                            <NavLink className="nav-link px-1" to={index===0?'/':item.name.toLowerCase()} children={
+                                <Fragment>
+
+                                    <i className={item.icon}></i>
+                                    <span className="text-center">{item.label}</span>
+                                </Fragment>
+                            }></NavLink>
+                            {/* <a className="nav-link px-1" href={`#${item.name.toLowerCase()}`}>
+                            </a> */}
+                        </li>
                 )) : ""}
             </ul>
         </div>

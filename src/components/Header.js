@@ -1,9 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 
-function Header({menu}) {
-
+function Header({menu, setState}) {
+    useEffect(()=>{
+        if(menu){
+            setState(true)
+        }
+        // eslint-disable-next-line
+    },[menu])
     return (
         <nav className="navbar navbar-dark fixed-top bg-dark align-items-start toggled sidebar sidebar-dark accordion p-0" id="main-navbar">
         <div className="container-fluid d-flex flex-md-column flex-row p-0">

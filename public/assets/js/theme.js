@@ -1,34 +1,3 @@
-// function manuallyFixed(ids, scrollTop) {
-//   if (ids) {
-//     ids.forEach((id, index) => {
-//       const elm = document.getElementById(id);
-//       console.log(elm.getClientRects()[0].top);
-
-//       var vw = Math.max(
-//         document.documentElement.clientWidth || 0,
-//         window.innerWidth || 0
-//       );
-
-//       if (vw > 768) {
-//         elm.style.marginTop = scrollTop + "px";
-//       } else {
-//         elm.style.marginTop = 0;
-//       }
-//     });
-//   }
-// }
-
-// document.onload = manuallyFixed(
-//   ["card-warpper", "main-navbar"],
-//   window.scrollY
-// );
-// document.addEventListener("scroll", function (e) {
-//   e.preventDefault();
-//   manuallyFixed(
-//     ["card-warpper", "main-navbar"],
-//     document.documentElement.scrollTop
-//   );
-// });
 (function () {
   "use strict"; // Start of use strict
 
@@ -108,12 +77,12 @@
     // Scroll to top button appear
     window.addEventListener("scroll", function () {
       var scrollDistance = window.pageYOffset;
-
+      scrollToTop.style.transition = "opacity 400ms ease-in-out";
       //check if user is scrolling up
       if (scrollDistance > 100) {
-        scrollToTop.style.display = "block";
+        scrollToTop.style.opacity = 1;
       } else {
-        scrollToTop.style.display = "none";
+        scrollToTop.style.opacity = 0;
       }
     });
   }

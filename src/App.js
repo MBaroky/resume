@@ -15,14 +15,32 @@ function App() {
     setJsonData(data);
   }, []);
 
+  const [childLoaded, setChildLoaded] = useState(false);
+
+  useEffect(() => {
+    if (childLoaded) {
+      const script = document.createElement("script");
+      script.src = "./assets/js/theme.js";
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }
+    console.log(childLoaded);
+  }, [childLoaded]);
   return (
     <div id='wrapper'>
+      <span id='page-top'></span>
       <Header
         menu={jsonData.find(({ name }) => name === "menu-items")}
+        setState={setChildLoaded}
       />
       <BodyWrapper data={jsonData} />
       {/* to top button */}
       <a
+        style={{ opacity: 0 }}
         className='border rounded d-inline scroll-to-top'
         href='#page-top'>
         <i className='fas fa-angle-up'></i>

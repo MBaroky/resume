@@ -23,7 +23,7 @@ function Content({ content }) {
   return (
     <div
     className='col-md-8 offset-md-4 text-light'
-    id='data-wrapper' style={{minHeight:'100vh', boxSizing:'border-box'}}>
+    id='data-wrapper'>
       <Routes>
         <Route path='/' exact element={
           <About content={about}  />

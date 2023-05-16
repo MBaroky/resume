@@ -44,6 +44,15 @@ ul.timeline {
     }
   }
 
+// custom bullets
+.cutom-bullets{
+  li{
+    &::marker{
+      content: " " attr(data-emoji) "\00a0\00a0\00a0";
+      color:var(--front-color-main);
+    }
+  }
+}
 
 // Automating delay cases up to $i items
 $base-margin: 400;

@@ -4,7 +4,10 @@ import Content from "./Content";
 
 function BodyWrapper({ data }) {
   return (
-    <div className='d-flex flex-column' id='content-wrapper'>
+    <div
+      className='d-flex flex-column'
+      id='content-wrapper'
+      style={{ minHeight: "100vh", boxSizing: "border-box" }}>
       <div id='content'>
         <div className='container-fluid p-0'>
           <div className='row g-0'>

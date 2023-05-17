@@ -6,7 +6,10 @@ function Profile({ content }) {
   const profileData = content ? content.data : false;
 
   return (
-    <div className='col-md-4' id='card-warpper'>
+    <div
+      className='col-md-4'
+      id='card-warpper'
+      style={{ zIndex: 1000 }}>
       <div id='card-top'>
         {
           // eslint-disable-next-line

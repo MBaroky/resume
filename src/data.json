@@ -3,7 +3,7 @@
         "name": "menu-items",
         "data": [
             {
-                "name": "About",
+                "name": "about",
                 "icon": "icon-user",
                 "label": "About Me"
             },

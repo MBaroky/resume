@@ -1,8 +1,12 @@
+// libs
 import React from "react";
 import { useState, useEffect } from "react";
+
+// utils
 import data from "./data.json";
 import "./App.scss";
 
+// comps
 import Header from "./components/Header";
 import BodyWrapper from "./components/BodyWrapper";
 
@@ -15,6 +19,7 @@ function App() {
     setJsonData(data);
   }, []);
 
+  // fixing: js file loaded before element render
   const [childLoaded, setChildLoaded] = useState(false);
 
   useEffect(() => {
@@ -28,16 +33,20 @@ function App() {
         document.body.removeChild(script);
       };
     }
-    console.log(childLoaded);
+    console.log(`childloaded: ${childLoaded}`);
   }, [childLoaded]);
+
+  // handling navigation direction
+  const [navDirection, setNavDirection] = useState({});
   return (
     <div id='wrapper'>
       <span id='page-top'></span>
       <Header
         menu={jsonData.find(({ name }) => name === "menu-items")}
-        setState={setChildLoaded}
+        setChildState={setChildLoaded}
+        navState={{ setNavDirection, navDirection }}
       />
-      <BodyWrapper data={jsonData} />
+      <BodyWrapper data={jsonData} navDirection={navDirection} />
       {/* to top button */}
       <a
         style={{ opacity: 0 }}

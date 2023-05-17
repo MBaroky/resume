@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Profile from "./Profile";
 import Content from "./Content";
 
-function BodyWrapper({ data }) {
+function BodyWrapper({ data, navDirection }) {
   return (
     <div
       className='d-flex flex-column'
@@ -19,7 +19,7 @@ function BodyWrapper({ data }) {
                   )}
                 />
                 {/* content */}
-                <Content content={data} />
+                <Content content={data} navDirection={navDirection} />
               </Fragment>
             ) : (
               ""

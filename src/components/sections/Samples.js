@@ -1,14 +1,16 @@
 import React from "react";
+
+// components
 import SectionWrapper from "../SectionWrapper";
 import Gallery from "../Gallery";
 
-function Samples({ items, state }) {
+function Samples({ items, navDirection }) {
   const getIdFromTypeName = (str) =>{
     return str.toLowerCase().replace(" ",'-')
   }
   return (
     items?
-    <SectionWrapper  title="samples">
+    <SectionWrapper navDirection={navDirection} title="samples">
 
       <div>
             <ul className='nav nav-pills nav-fill' role='tablist'>

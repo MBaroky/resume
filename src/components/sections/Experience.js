@@ -1,11 +1,18 @@
-import React from 'react';
-import Timeline from '../Timeline'
+import React from "react";
 
-function Experience({items, skills }) {
+// components
+import Timeline from "../Timeline";
 
-    return (
-        <Timeline   items={items} skills={skills} id="experience" type="work" />
-     );
+function Experience({ items, skills, navDirection }) {
+  return (
+    <Timeline
+      items={items}
+      skills={skills}
+      navDirection={navDirection}
+      id='experience'
+      type='work'
+    />
+  );
 }
 
 export default Experience;

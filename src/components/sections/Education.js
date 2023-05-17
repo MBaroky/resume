@@ -1,10 +1,18 @@
-import React from 'react';
-import Timeline from '../Timeline'
+// libs
+import React from "react";
+import Timeline from "../Timeline";
 
-function Education({items, skills }) {
-    return (
-        <Timeline items={items} skills={skills} id="education" type="education" />
-     );
+function Education({ items, skills, navDirection }) {
+  return (
+    <Timeline
+      items={items}
+      skills={skills}
+      navDirection={navDirection}
+      id='education'
+      type='education'
+    />
+    // </motion.main>
+  );
 }
 
 export default Education;

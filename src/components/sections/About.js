@@ -1,13 +1,20 @@
+// libs
 import React, { Fragment } from "react";
 import { useInView } from "react-cool-inview";
+
+// icons
 import Icon from "../Icon";
 import { ReactComponent as ArmyIcon } from "../../icons/army.svg";
 import { ReactComponent as WeddingRing } from "../../icons/married.svg";
 import { ReactComponent as Cake } from "../../icons/cake.svg";
 import { ReactComponent as LocationPin } from "../../icons/location.svg";
+
+// components
 import SectionWrapper from "../SectionWrapper";
 
-function About({ content }) {
+function About({ content, navDirection }) {
+  // object of icons
+
   const icons = {
     "social-state": WeddingRing,
     "martial-state": ArmyIcon,
@@ -28,11 +35,12 @@ function About({ content }) {
     "data-aos-delay": delay,
     className: `aos-init ${inView ? "aos-animate" : ""}`,
   });
+
   return (
-    <SectionWrapper title='about'>
+    <SectionWrapper title='about' navDirection={navDirection}>
       {content ? (
         <div ref={observe}>
-          <ol id='about-bullets' class='cutom-bullets'>
+          <ol id='about-bullets' className='cutom-bullets'>
             {content.bullets.map((bullet, index) => (
               <li
                 data-emoji='🔘'

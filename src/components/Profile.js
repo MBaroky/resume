@@ -39,7 +39,7 @@ function Profile({ content }) {
           </div>
         </div>
       </div>
-      <div id='card-bottom'>
+      <div id='card-bottom' className='text-center'>
         <div className='mb-3'>
           <ul
             className='list-inline text-center mt-2'
@@ -50,6 +50,15 @@ function Profile({ content }) {
                 ))
               : ""}
           </ul>
+          <hr className='mb-2' style={{ margin: "0 20px 0" }} />
+          <p className='mb-0'>Created by © Mohamed Baroky</p>
+          <a
+            rel='noreferrer'
+            target='_blank'
+            className=''
+            href='https://github.com/MBaroky/mbaroky'>
+            github repo
+          </a>
         </div>
       </div>
     </div>

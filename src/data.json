@@ -427,10 +427,27 @@
                 "target":"_blank"
             },
             {
-                "id": 13,
+                "id": 14,
                 "type": 1,
                 "thumb": "./assets/img/230802-2-thumb.png",
                 "link": "https://www.alosmanauto.com/",
+                "linkType": "url",
+                "desc": "Created via Wix",
+                "target":"_blank"
+            },
+            {
+                "id": 15,
+                "type": 2,
+                "thumb": "https://img.youtube.com/vi/5r-xSPpf-28/hqdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=5r-xSPpf-28",
+                "linkType": "url",
+                "desc": "Created via Wix"
+            },
+            {
+                "id": 14,
+                "type": 1,
+                "thumb": "./assets/img/230802-3-thumb.png",
+                "link": "https://mbo-eg.azurewebsites.net/index.php",
                 "linkType": "url",
                 "desc": "Created via Wix",
                 "target":"_blank"

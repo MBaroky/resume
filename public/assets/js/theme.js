@@ -14,7 +14,7 @@
     var sidebarCollapseList = collapseElementList.map(function (
       collapseEl
     ) {
-      return new bootstrap.Collapse(collapseEl, { toggle: false });
+      // return new bootstrap.Collapse(collapseEl, { toggle: false });
     });
 
     for (var toggle of sidebarToggles) {

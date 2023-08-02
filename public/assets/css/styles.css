@@ -198,7 +198,9 @@ a {
 #samples .tab-pane {
   padding: 0.4rem;
 }
-
+#samples .gallery .item{
+  margin-bottom: 15px;
+}
 #samples .gallery a {
   display: block;
   margin-bottom: 0.4rem;

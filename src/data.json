@@ -349,7 +349,8 @@
                 "thumb": "./assets/img/230510-1-thumb.png",
                 "link": "https://www.lawyer-mahmoudshaaban.com/",
                 "linkType": "url",
-                "desc": "Created via Wix"
+                "desc": "Created via Wix",
+                "target":"_blank"
             },
             {
                 "id": 5,
@@ -357,7 +358,8 @@
                 "thumb": "./assets/img/230510-2-thumb.png",
                 "link": "https://www.eltag-egypt.com/",
                 "linkType": "url",
-                "desc": "Created via Wix"
+                "desc": "Created via Wix",
+                "target":"_blank"
             },
             {
                 "id": 6,
@@ -414,6 +416,24 @@
                 "link": "https://www.youtube.com/watch?v=MWYfrxdUc8c",
                 "linkType": "youtube",
                 "desc": "Created via Dudamobile"
+            },
+            {
+                "id": 13,
+                "type": 1,
+                "thumb": "./assets/img/230802-1-thumb.png",
+                "link": "https://802780.wixsite.com/royal-steel-691571mg",
+                "linkType": "url",
+                "desc": "Created via Wix",
+                "target":"_blank"
+            },
+            {
+                "id": 13,
+                "type": 1,
+                "thumb": "./assets/img/230802-2-thumb.png",
+                "link": "https://www.alosmanauto.com/",
+                "linkType": "url",
+                "desc": "Created via Wix",
+                "target":"_blank"
             }
         ]
     }

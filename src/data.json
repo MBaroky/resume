@@ -461,6 +461,42 @@
                 "linkType": "url",
                 "desc": "Created by Bootstrap Studio",
                 "target":"_blank"
+            },
+            {
+                "id": 18,
+                "type": 1,
+                "thumb": "./assets/img/230816-1-thumb.png",
+                "link": "https://www.elmajd-plast-eg.com/",
+                "linkType": "url",
+                "desc": "Created via Wix",
+                "target":"_blank"
+            },
+            {
+                "id": 19,
+                "type": 1,
+                "thumb": "./assets/img/230816-2-thumb.png",
+                "link": "https://www.egynoxx.com/",
+                "linkType": "url",
+                "desc": "Created via Wix",
+                "target":"_blank"
+            },
+            {
+                "id": 20,
+                "type": 1,
+                "thumb": "./assets/img/230816-3-thumb.png",
+                "link": "https://www.beltegypt.com/",
+                "linkType": "url",
+                "desc": "Created via Wix",
+                "target":"_blank"
+            },
+            {
+                "id": 21,
+                "type": 1,
+                "thumb": "./assets/img/230816-4-thumb.png",
+                "link": "https://txplan.netlify.app/",
+                "linkType": "url",
+                "desc": "Created by Bootstrap Studio",
+                "target":"_blank"
             }
         ]
     }

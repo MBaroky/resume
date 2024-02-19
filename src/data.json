@@ -447,7 +447,7 @@
                 "id": 16,
                 "type": 1,
                 "thumb": "./assets/img/230802-3-thumb.png",
-                "link": "https://mbo-eg.azurewebsites.net/index.php",
+                "link": "./assets/img/230802-3.png",
                 "linkType": "url",
                 "desc": "Created by Bootstrap - coding",
                 "target":"_blank"
@@ -457,7 +457,7 @@
                 "id": 17,
                 "type": 1,
                 "thumb": "./assets/img/230802-4-thumb.png",
-                "link": "https://battery-home.azurewebsites.net/",
+                "link": "./assets/img/230802-4.png",
                 "linkType": "url",
                 "desc": "Created by Bootstrap Studio",
                 "target":"_blank"

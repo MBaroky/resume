@@ -448,9 +448,8 @@
                 "type": 1,
                 "thumb": "./assets/img/230802-3-thumb.png",
                 "link": "./assets/img/230802-3.png",
-                "linkType": "url",
-                "desc": "Created by Bootstrap - coding",
-                "target":"_blank"
+                "linkType": "img",
+                "desc": "Created by Bootstrap - coding"
 
             },
             {
@@ -458,9 +457,8 @@
                 "type": 1,
                 "thumb": "./assets/img/230802-4-thumb.png",
                 "link": "./assets/img/230802-4.png",
-                "linkType": "url",
-                "desc": "Created by Bootstrap Studio",
-                "target":"_blank"
+                "linkType": "img",
+                "desc": "Created by Bootstrap Studio"
             },
             {
                 "id": 18,
